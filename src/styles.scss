@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pacifico&display=swap');
+
+
+$back-groun:#f4f2ee;
+
+body{
+  background-color: $back-groun;
+}

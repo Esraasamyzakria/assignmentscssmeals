@@ -1,0 +1,73 @@
+.text-style {
+  font-size: 2.25rem;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+  background: linear-gradient(to right, #ee8d2a, #c90519);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: "Oleo Script", serif;
+  margin-bottom: 50px;
+}
+.style{
+  display: flex;
+  flex-wrap: wrap;
+}
+.catLink {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 9999px;
+
+  &:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    color: #4b5563;
+    background-color: #f9fafb;
+  }
+
+  .dark & {
+    &:hover {
+      background-color: #1f2937;
+      color: #d1d5db;
+    }
+  }
+}
+
+.meal {
+  width: 230px;
+  height: 300px;
+  text-align: center;
+  background-color: white;
+  padding: 3rem 3rem 1rem;
+  border-radius: 35px;
+  transition: all 0.3s ease;
+  margin-top: 100px;
+
+  &:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: scale(1.05);
+  }
+}
+img {
+  width: 100%;
+  border-radius: 50%;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.button-style {
+  color: white;
+  background-color: #059669;
+  margin-top: 1rem;
+  font-weight: 600;
+  padding: 0.3rem 1.5rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #059669;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: scale(1.05);
+  }
+}

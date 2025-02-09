@@ -1,0 +1,22 @@
+<section>
+  <h1 class=" text-style">Learn, Cook, Eat Your Food</h1>
+  <ul class=" style gap-5">
+@if (catogrey) {
+  <li [routerLink]="['/category/all']" class=" catLink">All</li>
+  @for (cat of catogrey; track $index) {
+    <li [routerLink]="['/category',cat.strCategory]" class=" catLink">{{cat.strCategory}}</li>
+  }
+}
+</ul>
+
+     <div class="grid sm:grid-cols-2 md:grid-cols-3   xl:grid-cols-4 gap-4 mb-4">
+@for (mel of meal; track $index) {
+  <div class="meal  group ">
+    <img [src]=" mel.strMealThumb" class=" group-hover:rotate-[360deg] duration-700    -translate-y-20 " alt="">
+    <h3 class="font-semibold -mt-12 font-Pacifico tracking-wider	 text-xl">{{mel.strMeal.split(' ',2).join(' ')}}</h3><button class="button-style">
+      <a [href]="mel.strSource" data-discover="true"> View Recipe</a>  </button></div>
+}
+     </div>
+
+
+</section>
